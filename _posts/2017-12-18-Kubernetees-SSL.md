@@ -2,7 +2,7 @@
 layout: single
 title:  "Kubernetes SSL with Letencrypt"
 date:   2017-12-18 21:56:21 -0500
-categories: kubernetes
+categories: Kubernetes
 ---
 
 
