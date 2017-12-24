@@ -17,5 +17,5 @@ jobs:
       - run:
           name: Deploy 
           command: |
-            apt-get update && apt-get install default-jre
+            sudo apt-get update && sudo apt-get install -y default-jre
             ./deploy.sh
