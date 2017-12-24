@@ -5,11 +5,6 @@ jobs:
       - image: circleci/ruby 
     steps:
       - checkout
-      - setup_remote_docker
-      - run:
-          name: Install Bundler 
-          command: |
-            gem install bundler
       - run:
           name: Install Gems
           command: |
@@ -17,5 +12,5 @@ jobs:
       - run:
           name: Deploy 
           command: |
-            sudo apt-get update && sudo apt-get install -y default-jre
+            sudo apt-get update && sudo apt-get install -y nodejs default-jre
             ./deploy.sh
