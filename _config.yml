@@ -13,7 +13,7 @@ title                    : "The DevOps Deep State"
 title_separator          : "-"
 name                     : "Joe Hughes"
 description              : "The power behind the DevOps Movement"
-url                      : "https://deveopsdeepstate.com"
+url                      : "https://www.devopsdeepstate.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -78,7 +78,7 @@ social:
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-111538993-1"
 
 
 # Site Author
@@ -179,7 +179,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:categories/:title/index.html
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -229,9 +229,11 @@ jekyll-archives:
     category: archive-taxonomy
     tag: archive-taxonomy
   permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+    category: /categories/:name/index.html
+    tag: /tags/:name/index.html
 
+
+minify_html: true
 
 # HTML Compression
 # - http://jch.penibelst.de/
